@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+/* HEADER */
+.header {
+    background-color: white;
+    grid-area: encabezado;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    
+}
+.header h1 {
+    word-spacing: 4vh;
+    letter-spacing: 1vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10vh;
+    color: rgb(42, 88, 158);
+}
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+
+
+/* BODY */
+body {
+    background-image: url(../images/fondo2.jpg);
+    background-size: auto; 
+}
+/* GRID LAYOUT */
+.grid-area {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-areas: 
+    "logo encabezado encabezado"
+    "nav nav nav"
+    "publicidad parrafo imagen"
+    "pie pie pie";
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 20% 0.2fr 3fr 5%;
+    
+    
+}
+.grid-area__contacto {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-areas: 
+    "logo encabezado encabezado"
+    "nav nav nav"
+    "publicidad formulario formulario"
+    "pie pie pie";
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 20% 0.2fr 3fr 5%;
+}
+
+/* NAV */
+.nav {
+    background-color: rgb(143, 215, 236);
+    grid-area: nav;    
+
+}
+.nav__links {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;
+    
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+    font-size: 5vh;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* ASIDE */
+.publicidad {
+    grid-area: publicidad;
+    background-color: black;
+    
+}
+.imagenping {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagenping img {
+    
+    width: 100%;
+    align-content: center;
+    justify-items: center;
+    
+    
+}
+
+
+
+/* MAIN */
+.main {
+    grid-area: parrafo;    
+}
+.contenedor {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenedor p {
+    border-bottom: 4px solid;
+    border-top: 4px solid; 
+    border-style: inset;   
+    font-size: 5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    justify-content: center;
+    
+}
+/* IMAGEN */
+.imagen {
+    grid-area: imagen;
+}
+.imagenPortada {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagenPortada img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+
+
+/* FORMULARIO */
+.formularioContacto {
+    grid-area: formulario;
+}
+.formulario {
+    color: rgba(47, 201, 188, 0.664);
+    margin-left: 200px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* PRODUCTOS*/
+.producto1 {
+    
+    border: solid 3px;
+    background-color: rgb(95, 93, 92);
+    height: 350px;
+    width: 350px;
+    display: inline-block;
+    margin-top: 60px;
+    margin-right: 12px;
+    margin-left: 70px;
+}
+.producto2 {
+    
+    border: solid 3px;
+    background-color: rgb(95, 93, 92);
+    height: 350px;
+    width: 350px;
+    
+    margin-top: 60px;
+    margin-right: 12px;
+    margin-left: 70px;
+}
+.producto3 {
+   
+    border: solid 3px;
+    background-color: rgb(95, 93, 92);
+    height: 350px;
+    width: 350px;
+    
+    margin-top: 60px;
+    margin-right: 12px;
+    margin-left: 70px;
+}
+.card__header {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    background-color: black;
+    color: rgb(166, 200, 230);
+}
+.card__img {
+    height: 70%;
+    width: 80%;
+    overflow: hidden;
+    margin-left: 33px;    
+}
+.card__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: solid grey;
+}
+
+
+.card__body {
+    height: 100%;
+    width: auto;
+    
+}
+.card__body p {
+    text-align: center;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: whitesmoke;
+} 
+
+
+
+/* FOOTER */
+.footer {
+    grid-area: pie;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    font-size: 5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(143, 215, 236);;
+}
+/* MOBILE */
+@media screen and (max-width: 480px) {        
+
+
+.grid-area {
+    height: 100%;
+    width: 100%;
+    grid-template-areas: 
+    "logo encabezado"
+    "nav nav"
+    "parrafo imagen"
+    "publicidad publicidad"
+    "pie pie";  
+    grid-template-rows: 10% 5% auto 7% 5%;
+    grid-template-columns: 50% 50%;                
+    }
+.grid-area__contacto {
+    height: 100%;
+    width: 100%;
+    grid-template-areas: 
+    "logo encabezado"
+    "nav nav"
+    "formulario formulario"
+    "publicidad publicidad"
+    "pie pie";  
+    grid-template-rows: 10% 5% auto 7% 5%;
+    grid-template-columns: 50% 50%;
+    
+}
+.formulario {
+    margin-left: 30px;
+    
+}
+.formulario textarea {
+    columns: 30;
+}
+.header h1 {
+    font-size: 4vh;
+    text-align: center;
+    
+}
+.nav__link {
+    font-size: 3vh;
+}
+.contenedor p {
+    font-size: 4vh;
+}
+.imagenping img {
+    width: auto;
+    display: flex;
+    align-self: stretch;
+    
+}
+.footer {
+    font-size: 3vh;
+    align-items: center;
+}
+    
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" type="image/png" href="../images/Logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
+</head>
+<body class="grid-area__contacto">
+    <header class="header"> 
+        <h1 class="header__title">Garcia Rapisarda Golf</h1>  
+    </header>
+    <div class="logo">
+        <img class="header__logo" src="../images/Logohead.png" alt="Logo">
+    </div>
+    <nav class="nav">
+        <ul class="nav__links">
+            <li class="nav__item">
+                <a class="nav__link nav__link--active"  href="../index.html">Home</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="../pages/productos.html">Productos</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="../pages/alumnos.html">Alumnos</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="../pages/videos.html">Videos</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="../pages/contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav> 
+    
+    <main class="formularioContacto">
+        <form class="formulario" action="">
+            <div>Nombre y Apellido</div>
+            <label for="nombre"></label>
+            <input type="text" name="nombre" id="">
+            <br>
+            <div>Correo Electrónico</div>
+            <label for="correo"></label>
+            <input type="email" name="correo" id="">
+            <br>
+            <div>¿Jugás al golf?</div>        
+            <select name="golf" id="">
+                <option value="S">Si</option>
+                <option value="N">No</option>
+            </select>    
+            <br>
+            <div>Dejanos tu comentario</div>
+            <textarea name="" id="" cols="50" rows="10"></textarea>
+            <br>
+            <div>Suscribite a nuestro Newsletter</div>
+            <label for="newsletter"></label>
+            <input type="checkbox" name="newsletter" value="1">
+            <br>
+            <label for="Enviar"></label>
+            <input type="submit" value="Enviar">
+            <label for="Borrar"></label>
+            <input type="reset" value="Borrar">
+        </form>
+    </main>
+    <aside class="publicidad">
+        <div class="imagenping">
+            <img src="../images/ping.png" alt="publicidad">
+        </div>
+    </aside>
+    
+    
+    
+    <footer class="footer">
+        <h5>Mapa del sitio | Ayuda | Créditos</h5>
+    </footer>
+</body>
+</html>
