@@ -89,6 +89,16 @@ body {
     align-items: center;
     
 }
+.nav__item {
+    transition: all 1s;
+}
+.nav__item--transform:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    border: solid black;
+}
+
+
 
 .nav__link {
     text-decoration: none;
